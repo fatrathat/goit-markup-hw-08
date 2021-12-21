@@ -1,0 +1,35 @@
+/*-------------Clients content-------------*/
+
+.clients__list {
+  @include flex(flex, space-between);
+}
+
+.clients__item {
+  @include dimentions(170px, 90px);
+  @include border(1px, solid, var(--icon-main-color));
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-text-color);
+  }
+}
+
+.clients__link {
+  @include dimentions(100%, 100%);
+  @include flex(flex, center, center);
+  color: var(--icon-main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: var(--accent-text-color);
+  }
+}
+
+.clients__icon {
+  @include dimentions(106px, 60px);
+  fill: currentColor;
+}
+
+// БЭМ ГОТОВО!

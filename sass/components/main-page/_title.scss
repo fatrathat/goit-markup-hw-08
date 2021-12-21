@@ -1,0 +1,24 @@
+/*-------------Title content-------------*/
+.hero {
+  background-color: var(--background-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/main-page/bg-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px;
+  padding: 200px 0 200px 0;
+}
+
+.title-container {
+  width: 700px;
+}
+
+.hero__title {
+  @include font(900, 44px, 1.36, 0.06em);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: var(--main-title-color);
+  text-align: center;
+}
+
+// БЭМ ГОТОВО!

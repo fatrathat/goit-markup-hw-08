@@ -1,0 +1,68 @@
+/*-------------Header content-------------*/
+.header {
+  padding: 25px 0 25px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  @include flex(flex, center, center);
+}
+
+.header-nav {
+  @include flex(flex, center, center);
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list__item:not(last-child) {
+  margin-right: 50px;
+}
+
+.contacts-list__item:not(last-child) {
+  margin-right: 50px;
+}
+
+.header-list__link {
+  @include font(500, 14px, 1.14, 0.02em);
+  color: var(--first-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+  &.current-link::after {
+    position: absolute;
+    content: '';
+    @include dimentions(100%, 4px);
+    background-color: var(--accent-text-color);
+    left: 0;
+    bottom: -32px;
+    border-radius: 2px;
+  }
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-list__link {
+  @include font(500, 14px, 1.14, 0.02em);
+  color: var(--second-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.contacts-list__icon {
+  @include dimentions(16px, 12px);
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+// БЭМ ГОТОВО!

@@ -1,0 +1,21 @@
+@mixin font($weight, $size, $lh, $ls) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin flex($d: '', $jc: '', $ai: '') {
+  display: $d;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin dimentions($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin border($bw, $bs, $bc) {
+  border: $bw $bs $bc;
+}

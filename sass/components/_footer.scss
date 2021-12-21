@@ -1,0 +1,90 @@
+/*-------------Footer content-------------*/
+.footer {
+  background: var(--background-color);
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.address__link {
+  font-style: normal;
+  @include font(400, 14px, 1.71, 0.03em);
+  color: var(--footer-logo-color);
+}
+
+.address__list {
+  margin-top: 20px;
+}
+
+.address__item {
+  margin-bottom: 10px;
+}
+
+.mailtel-link {
+  color: var(--addres-text-color);
+}
+
+.footer-address {
+  display: flex;
+}
+
+.footer-social-container {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-mail-container {
+  position: absolute;
+  right: 15px;
+  padding-top: 12px;
+}
+
+.footer__title {
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+
+.title-social {
+  margin-bottom: 20px;
+}
+
+.newsletter {
+  display: flex;
+  margin-top: 20px;
+}
+
+.newsletter__text {
+  @include font(400, 16px, 1.25, 0.03em);
+  @include dimentions(360px, 50px);
+  @include border(1px, solid, rgba(255, 255, 255, 0.3));
+  padding-left: 16px;
+  background-color: var(--background-color);
+
+  color: rgba(255, 255, 255, 0.6);
+
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
+}
+
+.newsletter__button {
+  @include flex(flex, center, center);
+  margin-left: 12px;
+}
+
+.newsletter__icon {
+  margin-left: 10px;
+}
+
+// БЭМ ГОТОВО!

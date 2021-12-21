@@ -1,0 +1,26 @@
+@import './utils/mixins';
+// Main page
+@import './utils/variables';
+@import './base/reset';
+@import './base/general';
+
+@import './components/header';
+
+@import './components/logo';
+@import './components/main-page/container';
+@import './components/main-page/title';
+@import './components/button';
+@import './components/main-page/features';
+@import './components/main-page/sub-title';
+@import './components/main-page/activity';
+@import './components/main-page/team';
+@import './components/main-page/social-list';
+@import './components/main-page/clients';
+
+@import './components/footer';
+
+@import './components/main-page/modal';
+
+// Portfolio
+@import './components/portfolio/filter';
+@import './components/portfolio/list';

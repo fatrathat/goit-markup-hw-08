@@ -1,0 +1,32 @@
+/*-------------Features content-------------*/
+.features__list {
+  @include flex(flex, space-between);
+}
+
+.features__item {
+  width: 270px;
+}
+
+.features-icon-container {
+  @include dimentions(270px, 120px);
+  margin-bottom: 30px;
+  @include flex(flex, center, center);
+  background-color: var(--button-main-color);
+}
+
+.features__icon {
+  @include dimentions(65px, 70px);
+}
+
+.features__title {
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+}
+
+.features__text {
+  @include font(400, 14px, 1.71, 0.03em);
+  color: var(--second-text-color);
+  margin-top: 10px;
+}
+
+// БЭМ ГОТОВО!

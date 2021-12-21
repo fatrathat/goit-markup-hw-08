@@ -1,0 +1,39 @@
+.social-list {
+  @include flex(flex, center);
+}
+
+.social-list__item {
+  @include dimentions(44px, 44px);
+  & + .social-list__item {
+    margin-left: 10px;
+  }
+}
+
+.social-list__link {
+  @include flex(flex, center, center);
+  @include dimentions(100%, 100%);
+  border-radius: 50%;
+  color: var(--icon-main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    color: var(--main-title-color);
+  }
+}
+
+.footer__link {
+  background-color: #43444d;
+}
+
+.social-list__icon {
+  @include dimentions(20px, 20px);
+  fill: currentColor;
+}
+
+.footer__icon {
+  fill: var(--main-title-color);
+}
+
+// БЭМ ГОТОВО!
