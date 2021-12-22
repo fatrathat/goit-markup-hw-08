@@ -1,10 +1,17 @@
 .filter {
-  @include flex(flex, center);
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    @include flex(flex, center);
+  }
 }
 
 .filter__item {
   margin-right: 10px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__button {

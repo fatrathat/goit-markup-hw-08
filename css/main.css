@@ -952,13 +952,26 @@ body {
 
 .filter {
   display: flex;
-  justify-content: center;
-  align-items: "";
+  flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    display: flex;
+    justify-content: center;
+    align-items: "";
+  }
 }
 
 .filter__item {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .filter__item {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__button {
@@ -982,17 +995,36 @@ body {
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
   margin-bottom: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
 .portfolio-list__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
   margin-bottom: 30px;
-  box-sizing: border-box;
+}
+
+.portfolio-list__item img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .portfolio-list__link {
