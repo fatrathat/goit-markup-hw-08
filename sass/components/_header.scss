@@ -10,7 +10,8 @@
 }
 
 .header-nav {
-  @include flex(flex, center, center);
+  display: none;
+  // @include flex(flex, center, center);
 }
 
 .header-list {
@@ -46,8 +47,9 @@
 }
 
 .contacts-list {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  // display: flex;
+  // margin-left: auto;
 }
 
 .contacts-list__link {
@@ -66,4 +68,76 @@
   margin-right: 10px;
 }
 
+.open-mob {
+  background-color: transparent;
+  border: 0;
+  @include dimentions(40px, 40px);
+  margin-left: auto;
+}
+
+.open-mob__icon {
+  @include dimentions(100%, 100%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
+}
+
+.mob-menu-container {
+  @include dimentions(100vw, 100vh);
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 2;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  .container {
+    height: 100%;
+  }
+}
+
+.button-mob-close {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  top: 21px;
+  right: 25px;
+}
+
+.mob-menu__item {
+  &:not(:last-child) {
+    margin-bottom: 36px;
+  }
+}
+
+.mob-menu__link {
+  @include font(500, 40px, 1.175, 0.02em);
+  color: var(--first-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.mob-tel {
+  @include font(500, 34px, 1.17, 0.02em);
+  color: var(--accent-text-color);
+}
+
+.mob-email {
+  @include font(500, 24px, 1.16, 0.02em);
+  color: var(--second-text-color);
+}
+
+.mob-social {
+  display: flex;
+}
+
+.mob-social__link {
+  @include font(500, 18px, 1.22, 0.02em);
+  color: var(--accent-text-color);
+}
 // БЭМ ГОТОВО!
