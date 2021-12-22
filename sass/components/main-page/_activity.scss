@@ -1,6 +1,10 @@
 /*-------------Activity content-------------*/
 .activity {
+  display: none;
   padding-top: 0px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .activity__list {

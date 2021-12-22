@@ -1,8 +1,11 @@
 .logo {
-  @include font(700, 26px, 1.19, 0.03em);
+  @include font(700, 24px, 1.16, 0.03em);
   font-family: Raleway;
   & .logo-span {
     color: var(--accent-text-color);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(700, 26px, 1.19, 0.03em);
   }
 }
 

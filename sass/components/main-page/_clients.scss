@@ -1,11 +1,17 @@
 /*-------------Clients content-------------*/
 
 .clients__list {
-  @include flex(flex, space-between);
+  margin-bottom: -30px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
 }
 
 .clients__item {
-  @include dimentions(170px, 90px);
+  @include dimentions(210px, 90px);
   @include border(1px, solid, var(--icon-main-color));
   box-sizing: border-box;
   border-radius: 4px;
@@ -13,6 +19,19 @@
   &:hover,
   &:focus {
     border-color: var(--accent-text-color);
+  }
+  margin: 0 auto;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
