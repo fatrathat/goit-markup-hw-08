@@ -368,7 +368,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 200px 0 200px 0;
+  padding: 118px 0 118px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0 200px 0;
+  }
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -428,12 +434,6 @@ body {
   margin-bottom: 30px;
   color: var(--main-title-color);
   text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  .hero__title {
-    width: 360px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1167,7 +1167,7 @@ body {
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1175,6 +1175,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: "";
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 

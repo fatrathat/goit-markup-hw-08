@@ -6,7 +6,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 200px 0 200px 0;
+  padding: 118px 0 118px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0 200px 0;
+  }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/main-page/main-background/bg-img-mob-2x.jpg');
@@ -47,9 +50,7 @@
   margin-bottom: 30px;
   color: var(--main-title-color);
   text-align: center;
-  @media screen and (min-width: 480px) {
-    width: 360px;
-  }
+
   @media screen and (min-width: 1200px) {
     @include font(900, 44px, 1.36, 0.06em);
     width: 700px;
