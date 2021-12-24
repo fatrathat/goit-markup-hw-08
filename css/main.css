@@ -76,6 +76,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0 25px 0;
+  }
+}
+
 .header-container {
   display: flex;
   justify-content: center;
